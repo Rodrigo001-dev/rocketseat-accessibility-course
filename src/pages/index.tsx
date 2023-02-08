@@ -11,10 +11,10 @@ export default function Home() {
   return (
     <div className={roboto.className}>
       <header className={styles.header}>
-        <Image src={LogoImg} width={286 / 2} />
+        <Image src={LogoImg} width={286 / 2} alt="Blog da Rocketseat" />
 
         <nav className={styles.nav}>
-          <a href="https://github.com/Rodrigo001-dev">
+          <a href="https://github.com/Rodrigo001-dev" aria-label="Github">
             <svg
               stroke="currentColor"
               fill="currentColor"
