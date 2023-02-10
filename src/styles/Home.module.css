@@ -37,3 +37,37 @@
 .content p {
   margin: 20px 0;
 }
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  max-width: 1064px; /* padding de 20px em cada lado da 40: 1024 + 40 = 1064 */
+  width: 100%;
+
+  margin: 0 auto;
+
+  padding: 24px 20px;
+}
+
+.footer button {
+  padding: 1rem 2rem;
+  border-radius: 5px;
+
+  color: #996dff;
+
+  background: transparent;
+  font-size: 1rem;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 120px;
+  border-radius: 5px;
+  color: #333;
+}
