@@ -2,6 +2,8 @@
 
 > Projeto desenvolvido no curso de acessibilidade da [Rocketseat](https://github.com/Rocketseat)
 
+![Demo gif](https://github.com/Rodrigo001-dev/rocketseat-accessibility-course/blob/main/.github/img/gif-demo.gif)
+
 <LINKEDIN>
   Hoje vou falar um pouco sobre acessibilidade
 </LINKEDIN>
