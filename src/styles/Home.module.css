@@ -75,7 +75,7 @@
 .overlay {
   background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
-  inset: 0; // reseta todas as posições
+  inset: 0; /* reseta todas as posições */
 }
 
 .closeModalButton {

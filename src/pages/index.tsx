@@ -87,7 +87,9 @@ export default function Home() {
                   Esses são os termos de uso
                 </Dialog.Description>
                 <Dialog.Close asChild>
-                  <button type="button">Fechar</button>
+                  <button className={styles.closeModalButton} type="button">
+                    Fechar
+                  </button>
                 </Dialog.Close>
               </Dialog.Content>
             </Dialog.Portal>
