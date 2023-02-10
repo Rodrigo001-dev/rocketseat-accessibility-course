@@ -4,25 +4,11 @@
 
 ![Demo gif](https://github.com/Rodrigo001-dev/rocketseat-accessibility-course/blob/main/.github/img/gif-demo.gif)
 
-<LINKEDIN>
-  Hoje vou falar um pouco sobre acessibilidade
-</LINKEDIN>
-
-Já gostaria de ressaltar que acessibilidade é PARA TODOS!
-
-<LINKEDIN>
-Mas o que é acessibilidade?
-</LINKEDIN>
-
 Acessibilidade se refere à quanto a sua aplicação(seja ela web, mobile ou outros) é acessível para todos os tipos de público, **principalmente** para que **pessoas com deficiência** **consigam utilizá-lo**. Isso significa que, mesmo que o usuário seja portador de qualquer doenças, transtornos ou deficiências de fala, visual, auditiva, cognitiva, neurológica ou física, ele deve ser capaz de entender, navegar e interagir e contribuir com a Web.
 
 Mas acessibilidade não se refere exclusivamente a pessoas com deficiências ou necessidades especiais. Acessibilidade é sobre tornar a experiência melhor para todos os usuários, desde a forma como as cores são usadas para tratar o contraste e legibilidade da página; atalhos de teclado; ou até a legenda em um vídeo, que não só ajuda deficientes auditivos a entender sobre o que o vídeo se trata, mas também para quem possui dificuldades temporárias, como, por exemplo, um ambiente barulhento, vídeo em outro idioma, onde existe dificuldade para entender o que é dito, ou até mesmo a utilização dessa funcionalidade por preferência.
 
 No fim, a implementação de acessibilidade sempre será considerada a partir de perspectivas sobre o uso da aplicação em questão. O uso dessas ferramentas pode ser justificada pelo simples critério de: preferência pessoal; deficiência; ou impedimentos temporários (como, por exemplo, um óculos ou mouse quebrados).
-
-<LINKEDIN>
-Guidelines de acessibilidade
-</LINKEDIN>
 
 A WCAG (Web Content Accessibility Guidelines) busca introduzir uma série de diretrizes, padrões, recomendações e documentos que explicam como tornar a Web mais acessível para pessoas com deficiência.
 
@@ -37,10 +23,6 @@ A WCAG se baseia em quatro princípios que vai nos ajudar a entender os problema
 - **Compreensível:** O conteúdo contém linguagem clara e simples para que as pessoas compreendam com facilidade.
 
 - **Robusto:** As pessoas devem conseguir utilizar diversos tipos de tecnologia assistivas.
-
-<LINKEDIN>
-Critérios de sucesso
-</LINKEDIN>
 
 A WCAG estabelece alguns critérios para que você atinga os princípios
 
