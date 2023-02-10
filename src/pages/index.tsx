@@ -1,4 +1,5 @@
-import { useEffect, useRef, useState } from "react";
+import * as Dialog from "@radix-ui/react-dialog";
+
 import { Roboto } from "@next/font/google";
 import Head from "next/head";
 import Image from "next/image";
@@ -10,19 +11,6 @@ import styles from "../styles/Home.module.css";
 const roboto = Roboto({ weight: ["400", "700"], subsets: ["latin"] });
 
 export default function Home() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const modalRef = useRef(null);
-
-  function handleModalOpen() {
-    setIsModalOpen(true);
-  }
-
-  useEffect(() => {
-    if (isModalOpen) {
-      modalRef?.current?.focus();
-    }
-  }, [isModalOpen]);
-
   return (
     <div className={roboto.className}>
       <Head>
@@ -86,30 +74,26 @@ export default function Home() {
 
       <footer className={styles.footer}>
         <nav className={styles.nav} aria-label="Rodapé">
-          <button
-            type="button"
-            onClick={handleModalOpen}
-            aria-controls="modal1"
-          >
-            Termos de uso
-          </button>
+          <Dialog.Root>
+            <Dialog.Trigger asChild>
+              <button type="button">Termos de uso</button>
+            </Dialog.Trigger>
+            <Dialog.Portal>
+              <Dialog.Overlay className={styles.overlay} />
+
+              <Dialog.Content className={styles.modal}>
+                <Dialog.Title>Termos de uso</Dialog.Title>
+                <Dialog.Description>
+                  Esses são os termos de uso
+                </Dialog.Description>
+                <Dialog.Close asChild>
+                  <button type="button">Fechar</button>
+                </Dialog.Close>
+              </Dialog.Content>
+            </Dialog.Portal>
+          </Dialog.Root>
         </nav>
       </footer>
-
-      {isModalOpen && (
-        <div
-          id="modal1"
-          ref={modalRef}
-          className={styles.modal}
-          role="dialog"
-          aria-labelledby="modal1Title"
-          aria-describedby="modal1Description"
-          tabIndex={-1}
-        >
-          <h2 id="modal1Title">Termos de uso</h2>
-          <p id="modal1Description">Esses são os termos de uso</p>
-        </div>
-      )}
     </div>
   );
 }
